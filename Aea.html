@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"><!--para caracteres especiales del español como "ñ"-->
+	<title>Formulario</title>
+</head>
+<!--METODOS DE ENVIO
+GET: Envia a los datos como parte de la URL(Dirección web), son recepcionados y procesados por el elemento registrado en el action
+POST: Envia a los datos directamente al servidor como parte del request-->
+<body>
+	<form method="GET" action="formularios.html"><!--ACTION (#): pagina donde se procesara la información-->
+		<input type="text" name="usuario" placeholder="Usuario"><br> <!--br para hacer un salto de linea-->
+		<input type="password" name="password" placeholder="Contraseña"><br>
+		<textarea placeholder="Escribe algo"></textarea><br>
+		<input type="hidden" name="hora" value="oculto"><!--cosas que no se mostrara a los ususarios pero si en el codigo fuente-->
+		<select name="tipo">
+			<option value="1">Administrador</option>
+			<option value="2">Trabajador</option>
+		</select><br>
+		<input type="submit" name="submit" value="Login">
+	</form>
+
+</body>
+</html>
